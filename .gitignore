@@ -1,0 +1,27 @@
+# Data: never commit ImageNet images or the processed image array
+data/
+images.npy
+*.npz
+*.JPEG
+*.tar
+*.zip
+
+# Model checkpoints / weights
+*.pt
+*.pth
+*.ckpt
+*.h5
+checkpoints/
+
+# Secrets
+.env
+*.env
+*.pem
+kaggle.json
+
+# Python / tooling
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
