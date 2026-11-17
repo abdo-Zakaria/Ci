@@ -1,0 +1,5 @@
+# Persistent exclusion list for the subset builder.
+# One ORIGINAL ImageNet file name per line (e.g. n01807496_1234.JPEG or
+# ILSVRC2012_val_00001234.JPEG), optionally followed by "# reason".
+# Listed files are skipped in train AND test, and the build is reproducible
+# with this file. Do not edit the raw data. No exclusions recorded yet.

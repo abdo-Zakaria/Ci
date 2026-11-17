@@ -1,0 +1,141 @@
+{
+  "array": {
+    "bytes": 163651712,
+    "dtype": "uint8",
+    "shape": [
+      13318,
+      64,
+      64,
+      3
+    ]
+  },
+  "classes": [
+    {
+      "label": 0,
+      "name": "partridge",
+      "wnid": "n01807496"
+    },
+    {
+      "label": 1,
+      "name": "cocker spaniel",
+      "wnid": "n02102318"
+    },
+    {
+      "label": 2,
+      "name": "Sussex spaniel",
+      "wnid": "n02102480"
+    },
+    {
+      "label": 3,
+      "name": "cicada",
+      "wnid": "n02256656"
+    },
+    {
+      "label": 4,
+      "name": "dragonfly",
+      "wnid": "n02268443"
+    },
+    {
+      "label": 5,
+      "name": "boathouse",
+      "wnid": "n02859443"
+    },
+    {
+      "label": 6,
+      "name": "paintbrush",
+      "wnid": "n03876231"
+    },
+    {
+      "label": 7,
+      "name": "pirate",
+      "wnid": "n03947888"
+    },
+    {
+      "label": 8,
+      "name": "wing",
+      "wnid": "n04592741"
+    },
+    {
+      "label": 9,
+      "name": "French loaf",
+      "wnid": "n07684084"
+    }
+  ],
+  "config": {
+    "image_size": 64,
+    "max_array_bytes": 200000000,
+    "max_train_per_class": 1300,
+    "resample": "bicubic",
+    "split_seed": 42,
+    "test_per_class": 50,
+    "val_fraction": 0.1
+  },
+  "exclusions_applied": [],
+  "exclusions_not_found": [],
+  "non_rgb_converted": 157,
+  "per_class_counts": {
+    "test": {
+      "French loaf": 50,
+      "Sussex spaniel": 50,
+      "boathouse": 50,
+      "cicada": 50,
+      "cocker spaniel": 50,
+      "dragonfly": 50,
+      "paintbrush": 50,
+      "partridge": 50,
+      "pirate": 50,
+      "wing": 50
+    },
+    "train": {
+      "French loaf": 1170,
+      "Sussex spaniel": 1170,
+      "boathouse": 1170,
+      "cicada": 1170,
+      "cocker spaniel": 1170,
+      "dragonfly": 1170,
+      "paintbrush": 1170,
+      "partridge": 1170,
+      "pirate": 1006,
+      "wing": 1170
+    },
+    "val": {
+      "French loaf": 130,
+      "Sussex spaniel": 130,
+      "boathouse": 130,
+      "cicada": 130,
+      "cocker spaniel": 130,
+      "dragonfly": 130,
+      "paintbrush": 130,
+      "partridge": 130,
+      "pirate": 112,
+      "wing": 130
+    }
+  },
+  "preprocessing": "decode -> RGB (alpha on white; CMYK/gray via Pillow) -> resize shortest side to 64 (bicubic) -> center crop; no EXIF rotation",
+  "rejected_files": [],
+  "sha256": {
+    "images.npy": "c37a2c47e5b5e4fc1a2543015f77db9cd2aecbe875827cb44265b75c3764b60f",
+    "labels.npy": "b99713caeaa81024a1121b9769c83f329a2c09e08e02de7c375bf1ab75d9d0da",
+    "manifest.csv": "1939e5de5bffc67c58b2548451c86502846c2785bcf91d7441e8f7fcd9bfa4b7",
+    "test_idx.npy": "e766de7ac72e6e22b970ba62694de7ec97551cb7e7633d8db946e7ac862a9ff6",
+    "train_idx.npy": "eb5261fa7eff34441835c7ebb502643bd507f75f76dfd331195b6b0db2874de8",
+    "val_idx.npy": "fb2ac15a5a4e8db85fffee3ccf462544d7fedebcaaaeda7d5014c34019902d51"
+  },
+  "source_modes": {
+    "L": 157,
+    "RGB": 13161
+  },
+  "source_problems": [],
+  "split_method": "per class: sort file names, permute with numpy default_rng([seed, label]), first round-half-up(n*val_fraction) -> VAL, rest -> TRAIN",
+  "totals": {
+    "all": 13318,
+    "test": 500,
+    "train": 11536,
+    "val": 1282
+  },
+  "versions": {
+    "numpy": "2.1.3",
+    "pillow": "13.0.0",
+    "python": "3.13.18"
+  }
+}
